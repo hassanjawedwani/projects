@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #1b1b32;
+  color: white;
+}
+
+.container {
+  width: 60%;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+fieldset {
+  border: none;
+  margin: 20px 0;
+}
+
+h1 {
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+input,
+select,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 24px;
+  padding: 2px;
+  margin: 2px 0 8px;
+  background-color: #0a0a23;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+  width: unset;
+  height: unset;
+}
+
+legend {
+  margin-bottom: 8px;
+}
+
+button {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid white;
+  height: 2.3rem;
+  font-size: 1.3rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#business-account {
+  margin-left: 10px;
+}
