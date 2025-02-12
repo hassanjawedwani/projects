@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML/CSS Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h2>WANI</h2>
+      <h1>HTML/CSS Quiz</h1>
+      <navbar>
+        <ul>
+          <li><a href="#">INFO</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+        </ul>
+      </navbar>
+    </header>
+    <main>
+      <form action="#" method="POST">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="divider"></div>
+
+          <div class="student-info">
+            <div class="student-name">
+              <label for="student-name">Name:</label>
+              <input id="student-name" type="text" required />
+            </div>
+
+            <div class="student-email">
+              <label for="student-email">Email:</label>
+              <input id="student-email" type="email" required />
+            </div>
+
+            <div class="student-dob">
+              <label for="student-dob">
+                D.O.B:<span class="hide">(Date of Birth)</span>
+              </label>
+              <input id="student-dob" type="date" required />
+            </div>
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="divider"></div>
+          <div class="html-question-block">
+            <h3>1</h3>
+            <fieldset>
+              <legend>
+                The legend element represents a caption for the content of its
+                parent fieldset element
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <input type="radio" id="q1-a1" name="q1" value="true" />
+                  <label for="q1-a1">True</label>
+                </li>
+                <li>
+                  <input type="radio" id="q1-a2" name="q1" value="false" />
+                  <label for="q1-a2">False</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="html-question-block">
+            <h3>2</h3>
+            <fieldset>
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <input type="radio" id="q2-a1" name="q2" value="true" />
+                  <label for="q2-a1">True</label>
+                </li>
+                <li>
+                  <input type="radio" id="q2-a2" name="q2" value="false" />
+                  <label for="q2-a2">False</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions"> CSS </h2>
+          <div class="divider"></div>
+          <div class="css-question-block">
+            <label for="dropdown"></label>
+              Can the CSS margin property accept negative values?
+            </label>
+            <select id="dropdown" name="dropdown">
+              <option value="" disabled>Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="css-question-block">
+            <label for="query">Do you have any questions:</label>
+            <textarea
+              name="query"
+              id="query"
+              placeholder="Who is flexbox..."
+              rows="5"
+              cols="30"
+            ></textarea>
+          </div>
+        </section>
+        <button type="submit" id="submit-button">Send</button>
+      </form>
+    </main>
+    <footer>
+      <p><a href="#">WANI</a></p>
+      <p>San Francisco</p>
+      <p>California</p>
+      <p>USA</p>
+    </footer>
+  </body>
+</html>

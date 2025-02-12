@@ -1,0 +1,151 @@
+:root {
+  --color-blue-dark: #1b1b32;
+  --color-gold: #f1be32;
+  --color-white: #ffffff;
+  --color-white-light: rgb(220, 220, 220);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header > img {
+  width: 140px;
+}
+
+header > h1 {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: var(--color-gold);
+  text-align: center;
+}
+
+header > navbar > ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+header > navbar > ul > li > a {
+  color: var(--color-white-light);
+  text-decoration: none;
+  padding: 1px;
+}
+
+header > navbar > ul > li > a:hover {
+  cursor: pointer;
+  background-color: var(--color-white-light);
+  color: var(--color-blue-dark);
+}
+
+/* main  */
+
+main {
+  width: 80%;
+  min-width: 500px;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 40px;
+}
+
+.student-info label {
+  display: inline-block;
+  width: 50px
+}
+
+.student-info input {
+  display: inline-block;
+  width:  200px;
+}
+
+.html-question-block {
+  margin-bottom: 30px;
+}
+
+
+.html-question-block fieldset{
+  border: none;
+  padding: 1.4rem;
+}
+
+.html-question-block ul > li {
+  list-style: none;
+}
+
+
+.css-question-block label{
+  display: block;
+}
+
+#submit-button {
+  background-color: var(--color-white-light);
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: 2px solid var(--color-blue-dark);
+  font-size: 1.2rem;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+
+.divider {
+  height: 3px;
+  border: none;
+  background-color: var(--color-white-light);
+  margin: 2px 0 16px;
+}
+
+.hide {
+  display: none;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-blue-dark);
+}
+
+footer, 
+footer a {
+  color: var(--color-white-light);
+  font-style: italic;
+}
