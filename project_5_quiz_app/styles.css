@@ -27,7 +27,8 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 4rem;
   align-items: center;
   background-color: var(--color-blue-dark);
   color: var(--color-white);
@@ -37,9 +38,7 @@ header {
   width: 100%;
 }
 
-header > img {
-  width: 140px;
-}
+
 
 header > h1 {
   font-size: 1.3rem;
