@@ -1,0 +1,86 @@
+:root {
+  --color-black-light: #0a0a23;
+  --color-blue-light: #3b82c1;
+  --color-white: #ffffff;
+  --color-white-light: #dfdfe2;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+span[class~="sr-only"] {
+  clip: rect(1px 1px 1px 1px) !important;
+  clip-path: inset(50%) !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  border: 0 !important;
+  position: absolute !important;
+}
+
+section {
+  border: 2px solid var(--color-white-light);
+  width: 95%;
+  min-width: 20rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+h1 .flex {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1rem;
+}
+
+#years {
+  background-color: var(--color-black-light);
+  color: var(--color-white);
+  padding: 4px;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  gap: 1rem;
+}
+
+.table-wrap {
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+table caption {
+  text-align: left;
+  color: var(--color-blue-light);
+  font-size: 1.3rem;
+}
+
+tbody tr {
+  background-color: var(--color-white-light);
+  margin-bottom: 3rem;
+}
+
+tbody th {
+  text-align: left;
+}
+
+.description {
+  display: block;
+  font-weight: normal;
+}
+
+tbody td {
+  vertical-align: top;
+}
