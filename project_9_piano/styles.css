@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.piano {
+  width: 780px;
+  height: 150px;
+  background-color: green;
+  margin: 50px auto;
+  padding: 1px;
+  position: relative;
+}
+
+.keys {
+  width: 680px;
+  height: 100px;
+  background-color: black;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+
+.key {
+  width: 30px;
+  height: 95px;
+  background-color: white;
+  margin: 2px;
+  float: left;
+  position: relative;
+}
+
+.key.black--key::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -15px;
+  width: 26px;
+  height: 60px;
+}
+
+.logo {
+  position: relative;
+  width: 100px;
+  top: 14px;
+  left: 20px;
+  margin: 0;
+  color: white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+@media(max-width: 768px) {
+  .piano {
+    width: 400px;
+  }
+  .keys {
+    width: 340px
+  }
+  
+}
