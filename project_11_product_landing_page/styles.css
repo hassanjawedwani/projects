@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --color-lightWhite: #eeeeee;
+  --color-darkWhite: #DDDDDD;
+  --color-gold: #f1c40f;
+  --color-black: #000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: var(--color-lightWhite);
+  width: 70%;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-lightWhite);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#header-img {
+  width: 300px;
+}
+
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-black)
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#email {
+  width: 300px;
+  height: 1.5rem;
+  padding: 4px;
+}
+
+.btn {
+  background-color: var(--color-gold);
+  font-size: 0.7rem;
+  font-family: "Lato", sans-serif;
+  padding: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-large {
+  width: 100px;
+}
+
+#features {
+  margin: 40px 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.feature i {
+  font-size: 2rem;
+  
+}
+
+.feature div {
+  width: 90%;
+}
+
+#video {
+  width: 500px;
+  margin: 30px auto;
+  display: block;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 250px;
+  text-align: center;
+  border: 1px solid var(--color-black);
+  height: 200px;
+}
+
+.card .title {
+  background-color: var(--color-darkWhite);
+  
+}
+
+.card .price {
+  font-size: 2rem;
+}
+
+.card p {
+  margin: 10px;
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  background-color: var(--color-darkWhite);
+  padding: 0.5rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: var(--color-black);
+  margin-right: 1rem;
+  
+}
