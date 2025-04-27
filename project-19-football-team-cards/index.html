@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Football Team Cards</title>
+  </head>
+  <body>
+    <h1>Team stats</h1>
+    <p>Team: Argentina</p>
+    <p>Sport: Football</p>
+    <p>Year: 1986</p>
+    <p>Head coach: Carlos Bilardo</p>
+    <div class="filter">
+      <label for="filter-dropdown">Filter Teammates:</label>
+      <select id="filter-dropdown">
+        <option value="all-players">All Players</option>
+        <option value="nicknames">NickNames</option>
+        <option value="position-forward">Position Forward</option>
+        <option value="position-midfielder">Position Midfielder</option>
+        <option value="position-defender">Position Defender</option>
+        <option value="position-goalkeeper">Position Goalkeeper</option>
+      </select>
+    </div>
+    <div class="cards"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
