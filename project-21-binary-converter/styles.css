@@ -1,0 +1,45 @@
+:root {
+  --color-blue-dark: #1B1B32;
+  --color-white: #FFFFFF;
+  --color-gold: #F1BE32;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+  text-align: center;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+input[type="number"],
+button {
+  height: 1.2rem;
+}
+
+button {
+  background-color: var(--color-gold);
+  border: none;
+  border-radius: 0;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.output {
+  width: fit-content;
+  min-width: 7rem;
+  height: 3rem;
+  border: 0.2rem solid var(--color-gold);
+  margin: 2rem auto;
+  font-size: 2rem;
+}
