@@ -10,11 +10,11 @@ const checkNumber = () => {
   } else {
     alert("Please provide a phone number");
   }
-  const regex = /^(1\s?)?(\(\d{3}\)|\d{3})([\s.-]?)\d{3}([\s.-]?)\d{4}$/;
+  const regex = /^(?:\+92|0092|0)3[0-9]{2}[-]?[0-9]{7}$/;
   if (regex.test(number)) {
-    output.innerText += `Valid US number: ${number}\n`;
+    output.innerText += `Valid PK number: ${number}\n`;
   } else {
-    output.innerText += `Invalid US number: ${number}\n`;
+    output.innerText += `Invalid PK number: ${number}\n`;
   }
 };
 
