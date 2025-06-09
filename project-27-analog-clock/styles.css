@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgb(99, 99, 163) url("/assets/clock.jpg") center / cover no-repeat; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(40px);
+}
+
+.clock {
+  width: 18rem;
+  height: 18rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 20px solid rgb(172, 10, 10);
+  position: relative;
+  padding: 2rem;
+}
+
+.hand {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transition: all 0.05s;
+  transform: rotate(90deg);
+  transition-timing-function: ease-in-out;
+  transform-origin: 100%;
+  
+}
+
+.hour-hand {
+  width: 30%;
+  height: 7px;
+  background-color: rgb(189, 66, 87);
+}
+
+.minute-hand {
+  width: 40%;
+  height: 4px;
+  background-color: rgb(48, 48, 133);
+}
+
+.second-hand {
+  width: 48%;
+  height: 2px;
+  background-color: black;
+}
