@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffc600;
+  font-family: "helvetica neue";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.panels {
+  /* display: flex; */
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  background-color: #6b0f9c;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 
+  font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+  flex 0.7s cubic-bezier(0.62, -0.19, 0.7, -0.11);
+ 
+}
+
+.panel.open {
+  flex: 4;
+  font-size: 40px;  
+}
+
+.panel1 {
+  background-image: url(https://images.unsplash.com/photo-1726503014893-986e13826cd7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/1500x1500);
+}
+.panel2 {
+  background-image: url(https://images.unsplash.com/photo-1727773377690-57b51d0c6193?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/1500x1500);
+}
+.panel3 {
+  background-image: url(https://images.unsplash.com/photo-1726855500757-658894d298eb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/1500x1500);
+}
+.panel4 {
+  background-image: url(https://images.unsplash.com/photo-1728327511275-9c3491fb9eb1?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/1500x1500);
+}
+.panel5 {
+  background-image: url(https://images.unsplash.com/photo-1728155469374-df8569326706?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D/1500x1500);
+}
+
+.panel > * {
+  transition: transform 0.5s;
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel p {
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72);
+  font-size: 2em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 4em;
+}
+
+.panel.open {
+  font-size: 40px;
+}
