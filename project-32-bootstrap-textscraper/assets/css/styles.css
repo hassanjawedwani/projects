@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bs-dark-color: #1a1d20;
+  --bs-dark-primary: #1c1c1c;
+  --bs-main-color: #fff;
+  --bs-primary-color: #c6c6c6;
+  --bs-secondary-color: #29a9fd;
+  --bs-supporting-color: #C850C0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--bs-dark-color);
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+p {
+  letter-spacing: 0.07rem;
+  color: var(--bs-dark-color)
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link, h1, #hero-section h2, #hero-section p {
+  color: var(--bs-primary-color) !important;
+}
+
+#header-hero-section {
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1726011568 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1726011568 svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-bottom-1726011568 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.card-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.showcase-section {
+  background-image: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url("https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  
+}
+
+.custom-shape-divider-top-1726178996 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1726178996 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 117px;
+}
+
+.custom-shape-divider-top-1726178996 .shape-fill {
+  fill: #FFFFFF;
+}
